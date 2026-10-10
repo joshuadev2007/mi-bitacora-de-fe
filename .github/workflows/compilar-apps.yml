@@ -1,0 +1,95 @@
+name: Compilar Bitacora (Android APK + Windows EXE)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  android:
+    name: Android APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Android SDK
+        uses: android-actions/setup-android@v3
+      - name: Preparar Android SDK 35
+        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Dependencias Capacitor
+        working-directory: mobile
+        run: npm install --no-audit --no-fund
+      - name: Copiar sitio completo con los libros
+        run: node native/prepare.mjs mobile
+      - name: Construir puente de archivos
+        working-directory: mobile
+        run: npx esbuild native-bridge-src.js --bundle --minify --format=iife --platform=browser --outfile=www/native-bridge.js
+      - name: Preparar lector de libros PDF sin conexion
+        working-directory: mobile
+        run: |
+          npx esbuild pdf-reader-src.js --bundle --format=esm --platform=browser --outfile=www/pdf-reader.js
+          cp node_modules/pdfjs-dist/build/pdf.worker.min.mjs www/pdf.worker.min.mjs
+      - name: Crear proyecto Android
+        working-directory: mobile
+        run: npx cap add android
+      - name: Generar icono personalizado
+        working-directory: mobile
+        run: npx capacitor-assets generate --android --iconBackgroundColor '#2d4037' --iconBackgroundColorDark '#2d4037' --splashBackgroundColor '#f6f7f2'
+        continue-on-error: true
+      - name: Sincronizar app Android
+        working-directory: mobile
+        run: npx cap sync android
+      - name: Compilar APK instalable de prueba
+        working-directory: mobile/android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+      - name: Entregar APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Bitacora-de-Fe-Android-APK
+          path: mobile/android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 30
+
+  windows:
+    name: Windows EXE
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Dependencias Electron
+        working-directory: desktop
+        run: npm install --no-audit --no-fund
+      - name: Copiar sitio completo con los libros
+        run: node native/prepare.mjs desktop
+      - name: Generar icono Windows
+        run: node native/icon-windows.mjs
+      - name: Compilar instalador EXE y version portable
+        working-directory: desktop
+        run: npm run dist
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - name: Entregar instaladores
+        uses: actions/upload-artifact@v4
+        with:
+          name: Bitacora-de-Fe-Windows-EXE
+          path: desktop/dist/*.exe
+          if-no-files-found: error
+          retention-days: 30
