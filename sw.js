@@ -1,4 +1,4 @@
-const CACHE = 'bitacora-fe-v1';
+const CACHE = 'bitacora-fe-epica-v2';
 const CORE = ['./', './index.html', './style.css', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
