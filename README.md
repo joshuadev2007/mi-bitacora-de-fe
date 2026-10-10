@@ -1,3 +1,31 @@
+# Mi Bitácora de Fe — Edición FINAL 3.0 ✦
+
+## NUEVO en esta edición
+
+- Versículo diario rotativo con referencia, pregunta abierta y texto consultado por GetBible en RV 1909 (cuando hay conexión), registro de lectura y botón de reflexión.
+- **Nuestros libros**: los tres PDF originales completos (394 + 214 + 121 páginas), con un buscador local de texto por página y enlaces a las páginas exactas.
+- 20 fichas temáticas para convertir en investigaciones propias, sin atribuir una conclusión al usuario.
+- **TNM oficial**: disponible en el selector de traducciones, tanto en lector como en comparación. Por derechos de autor la app NO redistribuye el texto; abre jw.org y permite guardar notas personales sobre la referencia.
+- Conserva el resto de funciones de 2.0 (biblioteca, diario, planos, investigaciones, calendario, oraciones, mini-Shabat, versiones históricas, comparador, datos locales y respaldo).
+
+## ACTUALIZAR SIN PERDER NOTAS
+
+**ANTES DE HACER CAMBIOS: Ajustes → Descargar respaldo JSON.** Conservá ese archivo fuera de GitHub.
+
+Subí a la raíz de tu repositorio **todos los archivos del ZIP**, incluida la carpeta `estudios` con sus tres PDF y `indice.json`. Reemplazá `index.html`, `app.js`, `style.css`, `sw.js` y `README.md` (y cualquier archivo coincidente). No subás la carpeta que contiene todo; `index.html` debe quedar en la raíz. Guardá con **Commit changes**. GitHub Pages actualizará el mismo enlace.
+
+Para comprobar la actualización, forzá recarga (`Ctrl + Shift + R`) y cerrá/reabrí la aplicación instalada si fuera necesario. El service worker usa la versión `bitacora-fe-final-v3`.
+
+El código sigue utilizando la misma clave local `mi-bitacora-fe-v1`, sin cambiar tus notas existentes; se agregan las claves `daily` y `tnmNotes` a los respaldos. **No uses incógnito ni borres datos del navegador**: esos datos son personales de cada dispositivo/perfil y no hay sincronización. Las restauraciones JSON reemplazan los datos existentes.
+
+## DERECHOS Y PRIVACIDAD
+
+- TNM © Watchtower Bible and Tract Society. Se consulta en https://www.jw.org/es/biblioteca/biblia/ ; no se distribuye ni se descarga su texto desde la app.
+- Los libros de investigación PDF incluidos en el ZIP se harán **públicamente accesibles** si publicás este proyecto en un GitHub Pages público. Revisá que querás publicar estos documentos antes de subir el ZIP.
+- No subás tu diario, oraciones, respaldos ni notas personales al repositorio. Se almacenan localmente, no están cifrados.
+- Las biblias antiguas consultadas mediante GetBible requieren internet la primera vez que se abre un capítulo nuevo; luego algunos capítulos quedan en caché.
+- Los PDFs pueden requerir conexión la primera vez; el navegador puede guardarlos en caché tras abrirlos.
+
 # Mi Bitácora de Fe ✦ — Edición Épica 2.0
 
 Tu aplicación personal de estudio, escritura y reflexión espiritual: **hecha como PWA para GitHub Pages** y optimizada para PC y celulares. No requiere cuenta ni servidor propio.
