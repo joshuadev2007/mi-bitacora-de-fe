@@ -1,0 +1,9 @@
+{
+  "appId": "com.joshuadev2007.bitacoradefe",
+  "appName": "Mi Bitacora de Fe",
+  "webDir": "www",
+  "server": {"androidScheme": "https"},
+  "plugins": {
+    "SplashScreen": {"launchAutoHide": true, "backgroundColor": "#f6f7f2"}
+  }
+}

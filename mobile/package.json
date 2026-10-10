@@ -1,0 +1,23 @@
+{
+  "name": "mi-bitacora-de-fe-android",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Mi Bitácora de Fe para Android",
+  "scripts": {
+    "cap:add": "cap add android",
+    "cap:sync": "cap sync android",
+    "assets": "capacitor-assets generate --android --iconBackgroundColor '#2d4037' --iconBackgroundColorDark '#2d4037' --splashBackgroundColor '#f6f7f2'"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/share": "^7.0.0",
+    "pdfjs-dist": "4.10.38"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/assets": "3.0.5",
+    "esbuild": "^0.25.0"
+  }
+}

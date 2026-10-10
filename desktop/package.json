@@ -1,0 +1,34 @@
+{
+  "name": "mi-bitacora-de-fe-windows",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Mi Bitácora de Fe - aplicación personal para Windows",
+  "main": "main.cjs",
+  "author": "Mi Bitácora de Fe",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dist": "electron-builder --win nsis portable --x64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.joshuadev2007.bitacoradefe.windows",
+    "productName": "Mi Bitacora de Fe",
+    "asar": true,
+    "directories": {"output": "dist"},
+    "files": ["main.cjs", "www/**/*", "package.json"],
+    "win": {
+      "icon": "icon.ico",
+      "target": ["nsis", "portable"]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false,
+      "artifactName": "Mi-Bitacora-de-Fe-Instalador-${version}-${arch}.${ext}"
+    },
+    "portable": {"artifactName": "Mi-Bitacora-de-Fe-Portable-${version}-${arch}.${ext}"}
+  }
+}
