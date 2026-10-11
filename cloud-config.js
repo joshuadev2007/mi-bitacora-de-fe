@@ -3,5 +3,5 @@
    Nunca uses service_role, sb_secret_ ni contraseñas de usuario. */
 window.CloudDefaultConfig = {
   url: "https://pdgfayuuovhjcqnzgvyb.supabase.co",
-  anonKey: "" // Pendiente de incorporar la publishable key de Josh Cloud.
+  anonKey: "sb_publishable_NVAm5s10NO_mv2FaZ3W2Xg_UDwweID7"
 };
