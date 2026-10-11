@@ -1,3 +1,13 @@
+# Mi Bitácora de Fe — Versión final 3.2
+
+**Ahora incluye estantería privada para importar libros, lector interno de PDF y texto, dos guías originales y Android preparado para actualizaciones firmadas desde Releases.**
+
+**Instrucciones completas:** [ULTIMO_PASO_ANDROID_Y_LIBROS.md](./ULTIMO_PASO_ANDROID_Y_LIBROS.md).
+
+**Crítico:** para pasar del APK debug antiguo a un APK firmando permanentemente, respaldá las notas y los libros y seguí la migración de Android de la guía. Sin los cuatro secretos de firma, el flujo **NO** puede publicar un APK Android actualizable. No subas claves privadas, libros personales ni respaldos al repositorio público.
+
+---
+
 # Mi Bitácora de Fe · Versión 3.1.0
 
 **Novedad:** lector de estudios dentro de la aplicación, volúmenes originales del judaísmo por separado y soporte de comprobación de versiones. Para pasos de instalación y límites de las actualizaciones consultá [ACTUALIZACIONES_Y_LECTOR.md](./ACTUALIZACIONES_Y_LECTOR.md).

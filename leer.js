@@ -1,6 +1,6 @@
 'use strict';
 (()=>{
-  const BOOKS={juda1:{pdf:'Judaísmo_Volumen_I.pdf'},juda2:{pdf:'Judaísmo_Volumen_II.pdf'},juda3:{pdf:'Judaísmo_Volumen_III.pdf'},islam:{pdf:'EL_LIBRO_DEL_ISLAM.pdf'},comparativo:{pdf:'Volumen_III_Judaismo_vs_Cristianismo.pdf'}};
+  const BOOKS={juda1:{pdf:'Judaísmo_Volumen_I.pdf'},juda2:{pdf:'Judaísmo_Volumen_II.pdf'},juda3:{pdf:'Judaísmo_Volumen_III.pdf'},islam:{pdf:'EL_LIBRO_DEL_ISLAM.pdf'},comparativo:{pdf:'Volumen_III_Judaismo_vs_Cristianismo.pdf'},metodo:{pdf:'Guia_metodo.pdf'},fuentes:{pdf:'Guia_fuentes.pdf'}};
   const params=new URLSearchParams(location.search),id=params.get('libro'),book=BOOKS[id];
   const $=id=>document.getElementById(id),store='bitacora-lector-v1';
   let data=null,page=1,font=1.12;

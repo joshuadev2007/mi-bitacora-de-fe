@@ -3,8 +3,13 @@
 import { Capacitor } from '@capacitor/core';
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
 import { Share } from '@capacitor/share';
+import { Browser } from '@capacitor/browser';
 
 if (Capacitor.isNativePlatform()) {
+  window.__bitacoraAndroid = true;
+  window.__openBitacoraExternal = async url => {
+    try { const u = new URL(url); if (u.protocol !== 'https:' || !['github.com','objects.githubusercontent.com'].includes(u.hostname)) throw Error('Enlace externo no autorizado'); await Browser.open({url:u.href}); } catch(e){ alert('No se pudo abrir la actualización oficial de GitHub.'); console.error(e); }
+  };
   window.__nativeSaveFile = async (name, contents) => {
     try {
       const safeName = String(name).replace(/[^a-zA-Z0-9._-]/g, '_');

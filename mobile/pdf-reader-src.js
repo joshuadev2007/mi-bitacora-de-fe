@@ -1,6 +1,6 @@
 import * as pdfjs from 'pdfjs-dist/build/pdf.mjs';
 pdfjs.GlobalWorkerOptions.workerSrc = './pdf.worker.min.mjs';
-const documents = new Set(['EL_LIBRO_DEL_JUDAISMO.pdf','Judaísmo_Volumen_I.pdf','Judaísmo_Volumen_II.pdf','Judaísmo_Volumen_III.pdf','EL_LIBRO_DEL_ISLAM.pdf','Volumen_III_Judaismo_vs_Cristianismo.pdf']);
+const documents = new Set(['EL_LIBRO_DEL_JUDAISMO.pdf','Judaísmo_Volumen_I.pdf','Judaísmo_Volumen_II.pdf','Judaísmo_Volumen_III.pdf','EL_LIBRO_DEL_ISLAM.pdf','Volumen_III_Judaismo_vs_Cristianismo.pdf','Guia_metodo.pdf','Guia_fuentes.pdf']);
 const params = new URLSearchParams(location.search);
 const name = params.get('pdf');
 const pages = Number(params.get('page')) || 1;
@@ -9,7 +9,7 @@ const setStatus = text => { $('status').textContent=text; };
 if(!documents.has(name)) {
   setStatus('Libro no disponible.');
 } else {
-  const title = name === 'EL_LIBRO_DEL_JUDAISMO.pdf' ? 'El Libro del Judaísmo' : name === 'EL_LIBRO_DEL_ISLAM.pdf' ? 'El Libro del Islam' : 'Judaísmo y Cristianismo';
+  const title = name === 'EL_LIBRO_DEL_JUDAISMO.pdf' ? 'El Libro del Judaísmo' : name === 'EL_LIBRO_DEL_ISLAM.pdf' ? 'El Libro del Islam' : name === 'Guia_metodo.pdf' ? 'Estudiar la Biblia con contexto' : name === 'Guia_fuentes.pdf' ? 'Tres tradiciones · Guía de fuentes' : 'Judaísmo y Cristianismo';
   $('title').textContent = title;
   let pdf;
   let current = pages;
