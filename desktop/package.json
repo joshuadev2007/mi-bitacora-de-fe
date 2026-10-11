@@ -1,6 +1,6 @@
 {
   "name": "mi-bitacora-de-fe-windows",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "private": true,
   "description": "Mi Bitácora de Fe - aplicación personal para Windows",
   "main": "main.cjs",
