@@ -11,6 +11,7 @@ const el = (id)=>document.getElementById(id);
 const safe = v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fromStorage=(key)=>{try{return JSON.parse(localStorage.getItem(key)||'null')}catch{return null}};
 const savedConfig=fromStorage(CK)||{};
+const fixedCloud=!!(window.CloudDefaultConfig?.url && window.CloudDefaultConfig?.anonKey);
 // La pantalla Data API de Supabase puede mostrar /rest/v1/. Auth usa la URL base.
 function normalizeProjectUrl(raw){
  const v=String(raw||'').trim();if(!v)return '';
@@ -127,7 +128,7 @@ function refreshPanel(){
  if(!account){body.innerHTML='<p>Iniciá sesión con el mismo correo en PC y Android. Podés seguir usando tus apps sin internet.</p>';return}
  body.innerHTML=`<p>Sesión activa: <strong>${safe(account.email)}</strong></p>${channels.map(c=>`<div class="cloud-row"><strong>${safe(c.title)}</strong><small>${pending[c.id]?'⚠️ Dos copias diferentes':state[c.id].ready?'✓ Sincronización activada':'Revisando…'}</small>${pending[c.id]?`<div class="cloud-options"><button data-cloud-choose="cloud" data-cloud-id="${safe(c.id)}">Usar copia de nube</button><button data-cloud-choose="local" data-cloud-id="${safe(c.id)}">Usar copia de este equipo</button></div>`:''}</div>`).join('')}`;
 }
-function show(){el('cloud-dialog').hidden=false;el('cloud-button').setAttribute('aria-expanded','true');el('cloud-connect').hidden=configured();el('cloud-auth').hidden=!configured()||!!account;el('cloud-signed').hidden=!account;el('cloud-config-url').value=config.url;el('cloud-config-key').value=config.key;refreshPanel()}
+function show(){el('cloud-edit-connection').hidden=fixedCloud;el('cloud-config-reset').hidden=fixedCloud;el('cloud-dialog').hidden=false;el('cloud-button').setAttribute('aria-expanded','true');el('cloud-connect').hidden=configured();el('cloud-auth').hidden=!configured()||!!account;el('cloud-signed').hidden=!account;el('cloud-config-url').value=config.url;el('cloud-config-key').value=config.key;refreshPanel()}
 function hide(){el('cloud-dialog').hidden=true;el('cloud-button').setAttribute('aria-expanded','false')}
 async function login(e){e.preventDefault();if(busy)return;const form=e.currentTarget;const email=form.elements.email.value.trim(),password=form.elements.password.value;const action=e.submitter?.value||'login';if(password.length<6){toast('La contraseña debe tener al menos 6 caracteres.');return}
  busy=true;toast(action==='register'?'Creando cuenta…':'Iniciando sesión…');
