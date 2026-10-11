@@ -113,3 +113,10 @@ No subás tu archivo de respaldo JSON, oraciones personales o anotaciones privad
 - Texto bíblico y API: https://getbible.net/api/bible/v2/
 - API de consulta de pasajes: https://getbible.net/api/query/v2/
 - Lectura de traducciones modernas: https://www.bible.com/es/versions , https://www.biblegateway.com/versions/ y https://www.jw.org/es/biblioteca/biblia/
+
+
+## ☁️ NUEVO: Cuenta y sincronización
+
+La interfaz incorpora «☁️ Cuenta», con correo/contraseña de Supabase y sincronización por dispositivo. Para activarla, leé `COMO_ACTIVAR_LA_CUENTA.md` y ejecutá `CONFIGURAR_SUPABASE.sql` en **tu propio proyecto** de Supabase. Reutilizá la MISMA URL y clave pública en JoshOS y Bitácora. **Nunca** coloqués claves `service_role` o `sb_secret_...` en GitHub.
+
+Se preservaron las claves originales de almacenamiento local. Exportá respaldos JSON antes de sincronizar; cuando haya dos copias diferentes, elegirás qué conservar. No hay fusión automática de cambios y los PDF importados manualmente no se sincronizan. La nube conserva el contenido en texto legible para el servicio (excepto notas ya cifradas de la bóveda).

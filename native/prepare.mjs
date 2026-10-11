@@ -11,7 +11,7 @@ if (!['desktop', 'mobile'].includes(platform)) throw Error('Usage: node native/p
 const dest = join(root, platform, 'www');
 rmSync(dest, {recursive:true,force:true});
 mkdirSync(dest, {recursive:true});
-for (const name of ['index.html','app.js','style.css','manifest.webmanifest','icon-192.png','icon-512.png','leer.html','leer.js','leer.css','mis-libros.js','lector-personal.html','lector-personal.js']) {
+for (const name of ['index.html','app.js','style.css','manifest.webmanifest','icon-192.png','icon-512.png','leer.html','leer.js','leer.css','mis-libros.js','lector-personal.html','lector-personal.js','cloud-config.js','cloud-sync.js','cloud-sync.css','sw.js']) {
   copyFileSync(join(root,name),join(dest,name));
 }
 cpSync(join(root,'estudios'),join(dest,'estudios'),{recursive:true});

@@ -1,5 +1,5 @@
-const CACHE = 'bitacora-fe-v3.1';
-const CORE = ['./', './index.html', './style.css', './app.js', './leer.html', './leer.js', './leer.css', './mis-libros.js', './lector-personal.html', './lector-personal.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './estudios/indice.json'];
+const CACHE = 'bitacora-fe-cloud-v3.3';
+const CORE = ['./', './index.html', './cloud-config.js', './cloud-sync.js', './cloud-sync.css', './style.css', './app.js', './leer.html', './leer.js', './leer.css', './mis-libros.js', './lector-personal.html', './lector-personal.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './estudios/indice.json'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
 });
