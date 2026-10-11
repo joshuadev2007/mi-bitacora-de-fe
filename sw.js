@@ -1,5 +1,5 @@
-const CACHE = 'bitacora-fe-final-v3';
-const CORE = ['./', './index.html', './style.css', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './estudios/indice.json'];
+const CACHE = 'bitacora-fe-v3.1';
+const CORE = ['./', './index.html', './style.css', './app.js', './leer.html', './leer.js', './leer.css', './manifest.webmanifest', './icon-192.png', './icon-512.png', './estudios/indice.json'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
 });

@@ -11,7 +11,7 @@ if (!['desktop', 'mobile'].includes(platform)) throw Error('Usage: node native/p
 const dest = join(root, platform, 'www');
 rmSync(dest, {recursive:true,force:true});
 mkdirSync(dest, {recursive:true});
-for (const name of ['index.html','app.js','style.css','manifest.webmanifest','icon-192.png','icon-512.png']) {
+for (const name of ['index.html','app.js','style.css','manifest.webmanifest','icon-192.png','icon-512.png','leer.html','leer.js','leer.css']) {
   copyFileSync(join(root,name),join(dest,name));
 }
 cpSync(join(root,'estudios'),join(dest,'estudios'),{recursive:true});
@@ -24,9 +24,6 @@ if(platform === 'mobile') {
   const needle = 'function downloadFile(name,content,type){';
   if (!js.includes(needle)) throw Error('No se pudo adaptar la exportación de los respaldos.');
   js = js.replace(needle,needle+"if(typeof window.__nativeSaveFile==='function'){window.__nativeSaveFile(name,content,type);return;}");
-  const pdfRoute = 'return `./estudios/${encodeURIComponent(doc.pdf)}#page=${Math.max(1,page)}`';
-  if (!js.includes(pdfRoute)) throw Error('No se pudo adaptar el lector de PDF.');
-  js = js.replace(pdfRoute, 'return `./reader.html?pdf=${encodeURIComponent(doc.pdf)}&page=${Math.max(1,page)}`');
   writeFileSync(join(dest,'app.js'),js);
 }
 writeFileSync(join(dest,'index.html'),html);

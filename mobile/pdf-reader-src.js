@@ -1,6 +1,6 @@
 import * as pdfjs from 'pdfjs-dist/build/pdf.mjs';
 pdfjs.GlobalWorkerOptions.workerSrc = './pdf.worker.min.mjs';
-const documents = new Set(['EL_LIBRO_DEL_JUDAISMO.pdf','EL_LIBRO_DEL_ISLAM.pdf','Volumen_III_Judaismo_vs_Cristianismo.pdf']);
+const documents = new Set(['EL_LIBRO_DEL_JUDAISMO.pdf','Judaísmo_Volumen_I.pdf','Judaísmo_Volumen_II.pdf','Judaísmo_Volumen_III.pdf','EL_LIBRO_DEL_ISLAM.pdf','Volumen_III_Judaismo_vs_Cristianismo.pdf']);
 const params = new URLSearchParams(location.search);
 const name = params.get('pdf');
 const pages = Number(params.get('page')) || 1;

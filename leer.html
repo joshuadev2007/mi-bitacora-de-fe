@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2d4037"><meta name="description" content="Lector de estudios de Mi Bitácora de Fe">
+<title>Lector de volúmenes · Mi Bitácora de Fe</title>
+<link rel="stylesheet" href="./leer.css">
+</head><body>
+<header class="top">
+  <a class="back" href="./index.html#libros" aria-label="Volver a la biblioteca">← Biblioteca</a>
+  <div class="identity"><span class="eyebrow">MI BITÁCORA DE FE · LECTOR</span><h1 id="book-title">Abriendo libro…</h1></div>
+  <button type="button" id="theme" class="quiet" aria-label="Cambiar tema">☾</button>
+</header>
+<main class="reader-wrap">
+  <section class="reader-tools" aria-label="Herramientas del lector">
+    <div class="reader-progress"><span id="progress-label">Preparando libro…</span><div class="progress-track"><div id="progress-bar"></div></div></div>
+    <div class="toolbar-row">
+      <button id="smaller" class="quiet" type="button" aria-label="Reducir letra">A−</button>
+      <button id="larger" class="quiet" type="button" aria-label="Aumentar letra">A+</button>
+      <button id="bookmark" class="quiet" type="button">✧ Marcar</button>
+      <a id="download-pdf" class="quiet" href="#" download>↓ PDF</a>
+    </div>
+  </section>
+  <section class="reader-page" aria-live="polite">
+    <div class="page-eyebrow" id="page-meta">ABRIENDO PÁGINA</div>
+    <h2 id="page-heading">Tu espacio de lectura</h2>
+    <article id="page-content">Preparando las páginas…</article>
+  </section>
+  <nav class="reader-pagination" aria-label="Navegar páginas">
+    <button type="button" id="prev">← Anterior</button>
+    <label class="page-input">Página <input id="page-number" type="number" inputmode="numeric" min="1" value="1"> <span id="page-total">/ —</span></label>
+    <button type="button" id="next">Siguiente →</button>
+  </nav>
+  <section class="reader-search">
+    <label for="find">Buscar dentro de este volumen</label>
+    <div class="search-row"><input type="search" id="find" placeholder="Ej. Shabat, Mesías, Torá…"><button id="find-btn" type="button">Buscar</button></div>
+    <div id="matches" aria-live="polite"></div>
+  </section>
+  <p class="privacy">Tu página de lectura se recuerda solo en este dispositivo. Los libros y las notas no se envían a ningún servidor desde este lector.</p>
+</main>
+<script src="./leer.js" defer></script>
+</body></html>

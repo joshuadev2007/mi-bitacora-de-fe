@@ -1,5 +1,6 @@
 'use strict';
-const { app, BrowserWindow, protocol, net, shell, session } = require('electron');
+const { app, BrowserWindow, protocol, net, shell, session, dialog } = require('electron');
+const { autoUpdater } = require('electron-updater');
 const { join, resolve, sep, basename } = require('node:path');
 const { mkdirSync, copyFileSync, existsSync } = require('node:fs');
 const { pathToFileURL } = require('node:url');
@@ -69,6 +70,24 @@ app.whenReady().then(async () => {
     item.setSaveDialogOptions({defaultPath:join(app.getPath('downloads'),item.getFilename())});
   });
   await windowRef.loadURL(homeURL);
+  // Windows: buscar versiones publicadas en GitHub Releases. Nunca reemplaza datos de usuario.
+  if(process.platform === 'win32' && app.isPackaged){
+    autoUpdater.autoDownload = true;
+    autoUpdater.autoInstallOnAppQuit = false;
+    autoUpdater.logger = console;
+    autoUpdater.on('error', e => console.warn('No se pudo comprobar la actualización:', e?.message));
+    autoUpdater.on('update-downloaded', async () => {
+      const {response} = await dialog.showMessageBox(windowRef, {
+        type:'info', title:'Mi Bitácora de Fe · Nueva versión',
+        message:'¡Tu Bitácora ya descargó una actualización!',
+        detail:'Podés instalarla ahora o continuar y hacerlo más tarde. Tus escritos locales se conservarán.',
+        buttons:['Actualizar y reiniciar','Más tarde'], defaultId:0, cancelId:1, noLink:true
+      });
+      if(response === 0)autoUpdater.quitAndInstall(false,true);
+    });
+    setTimeout(() => autoUpdater.checkForUpdates().catch(err=>console.warn('Actualizaciones:',err.message)),12000);
+    setInterval(() => autoUpdater.checkForUpdates().catch(()=>{}),6*60*60*1000).unref();
+  }
 });
 app.on('window-all-closed',()=>{if(process.platform!=='darwin') app.quit()});
 app.on('activate',()=>{if(BrowserWindow.getAllWindows().length === 0) app.emit('ready')});

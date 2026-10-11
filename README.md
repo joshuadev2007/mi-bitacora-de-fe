@@ -1,3 +1,9 @@
+# Mi Bitácora de Fe · Versión 3.1.0
+
+**Novedad:** lector de estudios dentro de la aplicación, volúmenes originales del judaísmo por separado y soporte de comprobación de versiones. Para pasos de instalación y límites de las actualizaciones consultá [ACTUALIZACIONES_Y_LECTOR.md](./ACTUALIZACIONES_Y_LECTOR.md).
+
+---
+
 # Mi Bitácora de Fe — Edición FINAL 3.0 ✦
 
 ## NUEVO en esta edición
