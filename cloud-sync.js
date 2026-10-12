@@ -12,7 +12,7 @@ const safe = v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>'
 const fromStorage=(key)=>{try{return JSON.parse(localStorage.getItem(key)||'null')}catch{return null}};
 const savedConfig=fromStorage(CK)||{};
 const fixedCloud=!!(window.CloudDefaultConfig?.url && window.CloudDefaultConfig?.anonKey);
-// La pantalla Data API de Supabase puede mostrar /rest/v1/. Auth usa la URL base.
+// Normalize Data API URLs copied from Supabase /rest/v1/ to the project base.
 function normalizeProjectUrl(raw){
  const v=String(raw||'').trim();if(!v)return '';
  try{
