@@ -107,8 +107,8 @@
 
 /* 4.2 · Lectura inmersiva, tipografía ajustable y continuidad al pie del capítulo */
 :root{--reader-font-scale:1}
-:root[data-bible-edition="antigua"] .scripture-verse{font-size:calc(clamp(17px,1.6vw,20px)*var(--reader-font-scale,1))}
-:root:not([data-bible-edition="antigua"]) .scripture-verse{font-size:calc(18px*var(--reader-font-scale,1))}
+:root[data-bible-edition="antigua"] .scripture-verse{font-size:var(--reader-antique-font-size,20px)}
+:root:not([data-bible-edition="antigua"]) .scripture-verse{font-size:var(--reader-font-size,18px)}
 .reader-chapter-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0;padding:22px clamp(18px,4vw,48px);border-top:1px solid var(--border);background:var(--card)}
 .reader-chapter-footer>div:first-child{display:grid;gap:4px}.reader-chapter-footer strong{font:600 19px var(--serif)}.reader-chapter-footer small{font-size:11px;color:var(--muted)}
 .reader-footer-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
