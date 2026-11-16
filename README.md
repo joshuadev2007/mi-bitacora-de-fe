@@ -1,8 +1,8 @@
-# Mi Bitácora de Fe 4.0 · Conocer para comprender
+# Mi Bitácora de Fe 4.2 · Edición de lectura y aprendizaje · Conocer para comprender
 
 Bitácora personal local-first para leer la Biblia, escribir reflexiones, investigar preguntas y estudiar la historia del cristianismo y las religiones del mundo.
 
-## Novedades de la edición 4.0
+## Novedades de la edición 4.2
 
 - **Historia de las religiones:** secciones de cristianismo, judaísmo, islam y otras tradiciones; cronología inicial y fuentes externas para seguir investigando.
 - **Doctrinas y creencias:** panoramas comparativos de Jesús, Dios, autoridad, salvación, bautismo, Eucaristía, María y canon bíblico. Las diferencias internas de cada tradición se señalan expresamente.
