@@ -124,6 +124,6 @@
 .bible-focus-mode .reader-chapter-footer{position:sticky;bottom:0;z-index:3;box-shadow:0 -8px 25px #0000000b}
 .bible-focus-mode .bible-reading-actions button{min-height:42px}
 @media(max-width:760px){.reader-chapter-footer{align-items:stretch;flex-direction:column;padding:18px 15px}.reader-footer-actions{display:grid;grid-template-columns:1fr 1fr}.reader-footer-actions .primary-btn{grid-column:1/-1;justify-content:center}.bible-focus-mode .main-content{padding:14px 12px 25px}.bible-focus-mode .page-head{padding-top:5px}.bible-focus-mode .reader-chapter-footer{position:sticky;bottom:0}.bible-reading-actions{gap:6px}.bible-reading-actions button{font-size:10px}}
-.epic-shortcuts{grid-template-columns:repeat(4,minmax(0,1fr))}
+.epic-shortcuts{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:900px){.epic-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){.epic-shortcuts{grid-template-columns:1fr}}
