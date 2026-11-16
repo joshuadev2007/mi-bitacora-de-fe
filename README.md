@@ -2,13 +2,14 @@
 
 Bitácora personal local-first para leer la Biblia, escribir reflexiones, investigar preguntas y estudiar la historia del cristianismo y las religiones del mundo.
 
-## Novedades de la edición 4.0
+## Novedades de la edición 4.2
 
 - **Biblioteca histórica en pergaminos:** ocho dossiers por capítulos sobre cristianismo, judaísmo, islam, hinduismo, budismo, taoísmo, sijismo y fe bahá’í; cada uno incluye bibliografía y enlaces para contrastar.
 - **Doctrinas y creencias:** panoramas comparativos de Jesús, Dios, autoridad, salvación, bautismo, Eucaristía, María y canon bíblico. Las diferencias internas de cada tradición se señalan expresamente.
 - **Laboratorio de preguntas:** método para formular preguntas, reunir fuentes, comparar argumentos y guardar conclusiones en el diario.
 - **Academia de estudio ampliada:** siete programas con objetivos, lecturas, actividades y lecciones individuales; incluye historia cristiana, fuentes antiguas, judaísmo e islam. El progreso mantiene las posiciones de los cinco cursos anteriores.
-- **Lector bíblico con edición antigua:** opción de lectura en estilo pergamino, además del modo sencillo.
+- **Lector bíblico inmersivo:** pantalla grande sin distracciones, tamaño de letra ajustable, continuidad del último capítulo y controles de capítulo al final de cada lectura.
+- **Planes de lectura extensos:** nuevos recorridos de 14 y 30 días, además de los planes breves.
 - Se conserva el almacenamiento anterior `mi-bitacora-fe-v1`, los módulos existentes y la sincronización configurada.
 
 ## Criterio editorial
