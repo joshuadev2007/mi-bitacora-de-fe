@@ -107,6 +107,26 @@ window.FaithArchive = {
       ["Interpretaciones a través de la historia","Conoce lecturas judías y cristianas, padres de la Iglesia, Reforma y métodos modernos.","Orígenes; Agustín; Lutero; comentarios contemporáneos.","Compara dos interpretaciones e identifica sus presupuestos."],
       ["Cómo evaluar una afirmación bíblica","Aprende a distinguir texto, inferencia, tradición, hipótesis y consenso académico.","Un pasaje de elección propia y dos comentarios académicos.","Entrega una ficha con tesis, evidencias, objeciones y conclusión provisional."]
     ]},
+    {id:"judaismo-estudio",title:"Historia del judaísmo y sus textos",level:"Intermedio",duration:"8 semanas",description:"Desde Israel antiguo y el Segundo Templo hasta el judaísmo rabínico y las comunidades modernas.",lessons:[
+      ["Israel y Judá en el antiguo Cercano Oriente","Contextualiza los reinos y las fuentes bíblicas y arqueológicas.","1 Reyes 12; inscripciones de Tel Dan (estudio).","Compara relato bíblico y evidencia material."],
+      ["Exilio y período persa","Estudia 722, 586 a. C., retorno y reconstrucción del Templo.","2 Reyes 25; Esdras 1–6.","Cronología comentada."],
+      ["Segundo Templo y grupos judíos","Fariseos, saduceos, esenios, diáspora y literatura del período.","Josefo; manuscritos del mar Muerto; textos de SBL.","Mapa de diversidad judía."],
+      ["Torá, Tanaj y manuscritos","Explora la formación textual y la organización de las Escrituras hebreas.","Deuteronomio 6; rollos del mar Muerto.","Ficha de un manuscrito."],
+      ["Mishná y Talmudes","Comprende la literatura rabínica y el desarrollo de la interpretación legal.","Mishná, Pirkei Avot (selecciones).","Distingue Torá escrita y tradición rabínica."],
+      ["Judaísmo medieval","Filosofía, exégesis, poesía, mística y vida en diáspora.","Maimónides; Rashi (introducciones).","Perfil de una figura y su época."],
+      ["Modernidad y corrientes","Haskalá, emancipación, reforma, ortodoxia y judaísmo masortí.","Documentos de corrientes judías.","Tabla de corrientes con diferencias y matices."],
+      ["Judaísmo contemporáneo","Holocausto, Israel, diásporas, secularidad y diversidad actual.","Yad Vashem; fuentes demográficas con metodología.","Informe que distinga historia, memoria y debate político."]
+    ]},
+    {id:"islam-estudio",title:"Historia del islam y el Corán",level:"Intermedio",duration:"8 semanas",description:"Arabia tardoantigua, Muhammad, Corán, califatos, escuelas y mundo musulmán contemporáneo.",lessons:[
+      ["Arabia tardoantigua","Contexto religioso, comercial y político antes del islam.","Corán 106; estudios de Oxford Islamic Studies.","Mapa de rutas y comunidades."],
+      ["Muhammad y la Hégira","Estudia la biografía tradicional y la diferencia entre fuentes tempranas y posteriores.","Corán 93; 96; cronología tradicional.","Tabla de datos y grado de certeza."],
+      ["El Corán como texto","Estructura, recitación, manuscritos y tradiciones de lectura.","Corán 1; 112; manuscritos tempranos.","Compara dos traducciones de una sura."],
+      ["Hadices y Sunnah","Cómo se transmitieron y evaluaron los informes sobre Muhammad.","Colecciones de hadices; introducción metodológica.","Explica isnad y matn."],
+      ["Califatos y expansión","Rashidun, omeyas y abasíes; expansión política y conversión gradual.","Crónicas y documentos históricos seleccionados.","Cronología y mapa."],
+      ["Sunismo, chiismo y jurisprudencia","Sucesión, autoridad, escuelas jurídicas y diversidad interna.","Introducciones académicas de Oxford.","Comparación respetuosa de dos escuelas."],
+      ["Filosofía, ciencia y sufismo","Intelectuales, traducciones, medicina, astronomía y espiritualidad.","Textos introductorios de filosofía islámica.","Perfil de un autor o tradición."],
+      ["Islam contemporáneo","Reformas, colonialismo, migración y diversidad global.","Pew Research Center (metodología); Britannica.","Informe regional y reflexión sobre estereotipos."]
+    ]},
     {id:"religiones-mundo",title:"Panorama comparado de las religiones",level:"Inicial",duration:"10 semanas",description:"Estudia tradiciones del mundo sin reducirlas a estereotipos ni asumir que todas responden a las mismas preguntas.",lessons:[
       ["Cómo estudiar religiones","Aprende historia, fenomenología, antropología, textos y límites de comparación.","Ninian Smart, Dimensions of the Sacred (introducción).","Define una pregunta comparativa sin prejuicios."],
       ["Judaísmo","Historia, Tanaj, alianza, Torá y diversidad comunitaria.","Tanaj; fuentes académicas judías.","Mapa conceptual."],
@@ -128,26 +148,6 @@ window.FaithArchive = {
       ["La crucifixión romana","Estudia la crucifixión como castigo romano, el papel de Pilato y los criterios históricos usados para analizar el acontecimiento.","Marcos 15; Josefo; Tácito; estudios de historia romana.","Distingue datos contextuales, testimonios y reconstrucciones."],
       ["Resurrección: historia y fe","Compara la proclamación pascual en las fuentes y comprende las diferencias entre estudiar testimonios y afirmar una explicación sobrenatural.","1 Corintios 15:3–8; Marcos 16; Mateo 28; Juan 20.","Formula el argumento histórico más sólido y señala qué cuestiones exceden el método histórico."],
       ["Método histórico y conclusiones","Aprende crítica de fuentes, corroboración, sesgo, anacronismo y grados de certeza.","Introducciones universitarias a metodología histórica.","Entrega un ensayo breve con fuentes primarias, estudios secundarios y límites explícitos."]
-    ]},
-    {id:"judaismo-estudio",title:"Historia del judaísmo y sus textos",level:"Intermedio",duration:"8 semanas",description:"Desde Israel antiguo y el Segundo Templo hasta el judaísmo rabínico y las comunidades modernas.",lessons:[
-      ["Israel y Judá en el antiguo Cercano Oriente","Contextualiza los reinos y las fuentes bíblicas y arqueológicas.","1 Reyes 12; inscripciones de Tel Dan (estudio).","Compara relato bíblico y evidencia material."],
-      ["Exilio y período persa","Estudia 722, 586 a. C., retorno y reconstrucción del Templo.","2 Reyes 25; Esdras 1–6.","Cronología comentada."],
-      ["Segundo Templo y grupos judíos","Fariseos, saduceos, esenios, diáspora y literatura del período.","Josefo; manuscritos del mar Muerto; textos de SBL.","Mapa de diversidad judía."],
-      ["Torá, Tanaj y manuscritos","Explora la formación textual y la organización de las Escrituras hebreas.","Deuteronomio 6; rollos del mar Muerto.","Ficha de un manuscrito."],
-      ["Mishná y Talmudes","Comprende la literatura rabínica y el desarrollo de la interpretación legal.","Mishná, Pirkei Avot (selecciones).","Distingue Torá escrita y tradición rabínica."],
-      ["Judaísmo medieval","Filosofía, exégesis, poesía, mística y vida en diáspora.","Maimónides; Rashi (introducciones).","Perfil de una figura y su época."],
-      ["Modernidad y corrientes","Haskalá, emancipación, reforma, ortodoxia y judaísmo masortí.","Documentos de corrientes judías.","Tabla de corrientes con diferencias y matices."],
-      ["Judaísmo contemporáneo","Holocausto, Israel, diásporas, secularidad y diversidad actual.","Yad Vashem; fuentes demográficas con metodología.","Informe que distinga historia, memoria y debate político."]
-    ]},
-    {id:"islam-estudio",title:"Historia del islam y el Corán",level:"Intermedio",duration:"8 semanas",description:"Arabia tardoantigua, Muhammad, Corán, califatos, escuelas y mundo musulmán contemporáneo.",lessons:[
-      ["Arabia tardoantigua","Contexto religioso, comercial y político antes del islam.","Corán 106; estudios de Oxford Islamic Studies.","Mapa de rutas y comunidades."],
-      ["Muhammad y la Hégira","Estudia la biografía tradicional y la diferencia entre fuentes tempranas y posteriores.","Corán 93; 96; cronología tradicional.","Tabla de datos y grado de certeza."],
-      ["El Corán como texto","Estructura, recitación, manuscritos y tradiciones de lectura.","Corán 1; 112; manuscritos tempranos.","Compara dos traducciones de una sura."],
-      ["Hadices y Sunnah","Cómo se transmitieron y evaluaron los informes sobre Muhammad.","Colecciones de hadices; introducción metodológica.","Explica isnad y matn."],
-      ["Califatos y expansión","Rashidun, omeyas y abasíes; expansión política y conversión gradual.","Crónicas y documentos históricos seleccionados.","Cronología y mapa."],
-      ["Sunismo, chiismo y jurisprudencia","Sucesión, autoridad, escuelas jurídicas y diversidad interna.","Introducciones académicas de Oxford.","Comparación respetuosa de dos escuelas."],
-      ["Filosofía, ciencia y sufismo","Intelectuales, traducciones, medicina, astronomía y espiritualidad.","Textos introductorios de filosofía islámica.","Perfil de un autor o tradición."],
-      ["Islam contemporáneo","Reformas, colonialismo, migración y diversidad global.","Pew Research Center (metodología); Britannica.","Informe regional y reflexión sobre estereotipos."]
     ]}
   ]
 };
