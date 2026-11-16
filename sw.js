@@ -1,4 +1,4 @@
-const CACHE = 'bitacora-fe-kaiu-companion-v4.0.0';
+const CACHE = 'bitacora-fe-kaiu-companion-v4.1.0';
 const CORE = ['./', './index.html', './cloud-config.js', './cloud-sync.js', './cloud-sync.css', './kaiu-companion.js', './kaiu-companion.css', './style.css', './biblioteca-historica.js', './app.js', './leer.html', './leer.js', './leer.css', './mis-libros.js', './lector-personal.html', './lector-personal.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './estudios/indice.json'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
