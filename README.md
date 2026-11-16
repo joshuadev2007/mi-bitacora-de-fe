@@ -1,14 +1,15 @@
-# Mi Bitácora de Fe 4.0 · Conocer para comprender
+# Mi Bitácora de Fe 4.2 · Edición de lectura y aprendizaje · Conocer para comprender
 
 Bitácora personal local-first para leer la Biblia, escribir reflexiones, investigar preguntas y estudiar la historia del cristianismo y las religiones del mundo.
 
-## Novedades de la edición 4.0
+## Novedades de la edición 4.2
 
-- **Historia de las religiones:** secciones de cristianismo, judaísmo, islam y otras tradiciones; cronología inicial y fuentes externas para seguir investigando.
+- **Biblioteca histórica en pergaminos:** trece dossiers por capítulos sobre cristianismo, judaísmo, islam, hinduismo, budismo, taoísmo, sijismo, fe bahá’í, jainismo, zoroastrismo, Shinto, confucianismo y religiones antiguas; cada uno incluye fuentes para profundizar.
 - **Doctrinas y creencias:** panoramas comparativos de Jesús, Dios, autoridad, salvación, bautismo, Eucaristía, María y canon bíblico. Las diferencias internas de cada tradición se señalan expresamente.
 - **Laboratorio de preguntas:** método para formular preguntas, reunir fuentes, comparar argumentos y guardar conclusiones en el diario.
-- **Academia de estudio:** cursos por niveles sobre cristianismo, historia, lectura bíblica, religiones y fuentes antiguas. El progreso se guarda localmente y forma parte del respaldo JSON.
-- **Lector bíblico con edición antigua:** opción de lectura en estilo pergamino, además del modo sencillo.
+- **Academia de estudio:** ocho programas con lecciones, objetivos, lecturas y actividades. Se conserva el orden de los cinco cursos originales para no mezclar el progreso guardado.
+- **Lector bíblico inmersivo:** modo pantalla grande, letra ajustable, último capítulo recordado y controles para avanzar desde el final.
+- **Planes de lectura:** recorridos de 7, 14 y 30 lecturas para estudiar con calma.
 - Se conserva el almacenamiento anterior `mi-bitacora-fe-v1`, los módulos existentes y la sincronización configurada.
 
 ## Criterio editorial
