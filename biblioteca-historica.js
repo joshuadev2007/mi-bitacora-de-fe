@@ -107,6 +107,28 @@ window.FaithArchive = {
       ["Interpretaciones a través de la historia","Conoce lecturas judías y cristianas, padres de la Iglesia, Reforma y métodos modernos.","Orígenes; Agustín; Lutero; comentarios contemporáneos.","Compara dos interpretaciones e identifica sus presupuestos."],
       ["Cómo evaluar una afirmación bíblica","Aprende a distinguir texto, inferencia, tradición, hipótesis y consenso académico.","Un pasaje de elección propia y dos comentarios académicos.","Entrega una ficha con tesis, evidencias, objeciones y conclusión provisional."]
     ]},
+    {id:"religiones-mundo",title:"Panorama comparado de las religiones",level:"Inicial",duration:"10 semanas",description:"Estudia tradiciones del mundo sin reducirlas a estereotipos ni asumir que todas responden a las mismas preguntas.",lessons:[
+      ["Cómo estudiar religiones","Aprende historia, fenomenología, antropología, textos y límites de comparación.","Ninian Smart, Dimensions of the Sacred (introducción).","Define una pregunta comparativa sin prejuicios."],
+      ["Judaísmo","Historia, Tanaj, alianza, Torá y diversidad comunitaria.","Tanaj; fuentes académicas judías.","Mapa conceptual."],
+      ["Cristianismo","Jesús, Biblia, credos y familias cristianas.","Evangelios; fuentes históricas.","Cronología breve."],
+      ["Islam","Tawhid, Corán, Muhammad y escuelas.","Corán; introducciones académicas.","Glosario de términos."],
+      ["Hinduismo","Vedas, Upanishads, devoción y escuelas filosóficas.","Bhagavad Gita; Britannica.","Compara dos corrientes hindúes."],
+      ["Budismo","Buda, Cuatro Nobles Verdades y tradiciones.","Dhammapada; Stanford Encyclopedia.","Explica dukkha y el camino."],
+      ["Taoísmo y tradiciones chinas","Tao, wu wei, ritual y relación con confucianismo y budismo.","Tao Te Ching; Zhuangzi.","Compara dos textos."],
+      ["Sijismo","Guru Nanak, Gurús, Guru Granth Sahib y Khalsa.","Guru Granth Sahib (selecciones).","Ficha sobre igualdad y servicio."],
+      ["Fe bahá’í y movimientos modernos","Báb, Bahá’u’lláh y revelación progresiva.","Bahá’í Reference Library.","Resume principios y contexto."],
+      ["Comparar sin simplificar","Analiza conceptos como Dios, liberación, comunidad, texto y práctica sin forzar equivalencias.","Fuentes primarias de dos tradiciones elegidas.","Ensayo comparativo con límites y fuentes."]
+    ]},
+    {id:"jesus-fuentes",title:"Jesús y las fuentes antiguas",level:"Avanzado",duration:"8 semanas",description:"Investiga qué documentos antiguos hablan de Jesús, qué pueden demostrar y cuáles son sus límites.",lessons:[
+      ["Fuentes cristianas tempranas","Distingue cartas auténticas de Pablo, Evangelios y escritos posteriores. Aprende a fechar y contextualizar cada testimonio.","1 Corintios 15; Gálatas; Marcos; Lucas 1:1–4.","Ordena cinco fuentes por fecha aproximada y explica qué información aporta cada una."],
+      ["Josefo y el Testimonium Flavianum","Estudia las referencias a Jesús en Antigüedades judías y el debate sobre interpolaciones cristianas en el pasaje más famoso.","Josefo, Antigüedades 18.63–64 y 20.200; estudios especializados.","Separa el texto transmitido, las posibles interpolaciones y lo que puede inferirse."],
+      ["Tácito y Plinio el Joven","Analiza referencias romanas a Cristo y a comunidades cristianas, atendiendo a fecha, propósito y distancia respecto de los hechos.","Tácito, Anales 15.44; Plinio, Cartas 10.96–97.","Explica qué afirman y qué no afirman estos autores."],
+      ["Judaísmo del Segundo Templo","Comprende fariseos, saduceos, esenios, apocalipticismo, templo y expectativas mesiánicas.","Manuscritos del mar Muerto; Josefo; Bible Odyssey.","Relaciona tres pasajes evangélicos con su contexto judío."],
+      ["Manuscritos del mar Muerto","Conoce el hallazgo, la colección, los tipos de documentos y su importancia para estudiar el judaísmo antiguo y la transmisión textual.","Israel Museum; Digital Dead Sea Scrolls.","Elige un manuscrito y escribe qué pregunta histórica ayuda a investigar."],
+      ["La crucifixión romana","Estudia la crucifixión como castigo romano, el papel de Pilato y los criterios históricos usados para analizar el acontecimiento.","Marcos 15; Josefo; Tácito; estudios de historia romana.","Distingue datos contextuales, testimonios y reconstrucciones."],
+      ["Resurrección: historia y fe","Compara la proclamación pascual en las fuentes y comprende las diferencias entre estudiar testimonios y afirmar una explicación sobrenatural.","1 Corintios 15:3–8; Marcos 16; Mateo 28; Juan 20.","Formula el argumento histórico más sólido y señala qué cuestiones exceden el método histórico."],
+      ["Método histórico y conclusiones","Aprende crítica de fuentes, corroboración, sesgo, anacronismo y grados de certeza.","Introducciones universitarias a metodología histórica.","Entrega un ensayo breve con fuentes primarias, estudios secundarios y límites explícitos."]
+    ]},
     {id:"judaismo-estudio",title:"Historia del judaísmo y sus textos",level:"Intermedio",duration:"8 semanas",description:"Desde Israel antiguo y el Segundo Templo hasta el judaísmo rabínico y las comunidades modernas.",lessons:[
       ["Israel y Judá en el antiguo Cercano Oriente","Contextualiza los reinos y las fuentes bíblicas y arqueológicas.","1 Reyes 12; inscripciones de Tel Dan (estudio).","Compara relato bíblico y evidencia material."],
       ["Exilio y período persa","Estudia 722, 586 a. C., retorno y reconstrucción del Templo.","2 Reyes 25; Esdras 1–6.","Cronología comentada."],
@@ -126,18 +148,6 @@ window.FaithArchive = {
       ["Sunismo, chiismo y jurisprudencia","Sucesión, autoridad, escuelas jurídicas y diversidad interna.","Introducciones académicas de Oxford.","Comparación respetuosa de dos escuelas."],
       ["Filosofía, ciencia y sufismo","Intelectuales, traducciones, medicina, astronomía y espiritualidad.","Textos introductorios de filosofía islámica.","Perfil de un autor o tradición."],
       ["Islam contemporáneo","Reformas, colonialismo, migración y diversidad global.","Pew Research Center (metodología); Britannica.","Informe regional y reflexión sobre estereotipos."]
-    ]},
-    {id:"religiones-mundo",title:"Panorama comparado de las religiones",level:"Inicial",duration:"10 semanas",description:"Estudia tradiciones del mundo sin reducirlas a estereotipos ni asumir que todas responden a las mismas preguntas.",lessons:[
-      ["Cómo estudiar religiones","Aprende historia, fenomenología, antropología, textos y límites de comparación.","Ninian Smart, Dimensions of the Sacred (introducción).","Define una pregunta comparativa sin prejuicios."],
-      ["Judaísmo","Historia, Tanaj, alianza, Torá y diversidad comunitaria.","Tanaj; fuentes académicas judías.","Mapa conceptual."],
-      ["Cristianismo","Jesús, Biblia, credos y familias cristianas.","Evangelios; fuentes históricas.","Cronología breve."],
-      ["Islam","Tawhid, Corán, Muhammad y escuelas.","Corán; introducciones académicas.","Glosario de términos."],
-      ["Hinduismo","Vedas, Upanishads, devoción y escuelas filosóficas.","Bhagavad Gita; Britannica.","Compara dos corrientes hindúes."],
-      ["Budismo","Buda, Cuatro Nobles Verdades y tradiciones.","Dhammapada; Stanford Encyclopedia.","Explica dukkha y el camino."],
-      ["Taoísmo y tradiciones chinas","Tao, wu wei, ritual y relación con confucianismo y budismo.","Tao Te Ching; Zhuangzi.","Compara dos textos."],
-      ["Sijismo","Guru Nanak, Gurús, Guru Granth Sahib y Khalsa.","Guru Granth Sahib (selecciones).","Ficha sobre igualdad y servicio."],
-      ["Fe bahá’í y movimientos modernos","Báb, Bahá’u’lláh y revelación progresiva.","Bahá’í Reference Library.","Resume principios y contexto."],
-      ["Comparar sin simplificar","Analiza conceptos como Dios, liberación, comunidad, texto y práctica sin forzar equivalencias.","Fuentes primarias de dos tradiciones elegidas.","Ensayo comparativo con límites y fuentes."]
     ]}
   ]
 };
