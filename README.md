@@ -1,15 +1,24 @@
-# Mi Bitácora de Fe 3.4 · Explorador de versículos
+# Mi Bitácora de Fe 4.0 · Conocer para comprender
 
-Actualización de la app original de Bitácora de Fe. Conserva las notas, investigaciones, oraciones, biblioteca, comparador, planes y copia JSON del formato `mi-bitacora-fe-v1`.
+Bitácora personal local-first para leer la Biblia, escribir reflexiones, investigar preguntas y estudiar la historia del cristianismo y las religiones del mundo.
 
-## Nuevo: descubrir versículos
+## Novedades de la edición 4.0
 
-En «Mis versículos», probá **Nuevo versículo al azar**: elige una referencia de un catálogo curado, intenta mostrar el texto Reina-Valera 1909 (si hay conexión), permite **Guardar versículo** y **Reflexionar** con la referencia ya precargada. Podés abrir el capítulo completo, consultar el contexto y editar tus apuntes después. Las referencias se muestran sin conexión; la consulta del texto puede requerir internet.
+- **Historia de las religiones:** secciones de cristianismo, judaísmo, islam y otras tradiciones; cronología inicial y fuentes externas para seguir investigando.
+- **Doctrinas y creencias:** panoramas comparativos de Jesús, Dios, autoridad, salvación, bautismo, Eucaristía, María y canon bíblico. Las diferencias internas de cada tradición se señalan expresamente.
+- **Laboratorio de preguntas:** método para formular preguntas, reunir fuentes, comparar argumentos y guardar conclusiones en el diario.
+- **Academia de estudio:** cursos por niveles sobre cristianismo, historia, lectura bíblica, religiones y fuentes antiguas. El progreso se guarda localmente y forma parte del respaldo JSON.
+- **Lector bíblico con edición antigua:** opción de lectura en estilo pergamino, además del modo sencillo.
+- Se conserva el almacenamiento anterior `mi-bitacora-fe-v1`, los módulos existentes y la sincronización configurada.
 
-## Josh Cloud
+## Criterio editorial
 
-La cuenta Supabase viene preconfigurada con URL y clave **pública**. Iniciá sesión con el mismo correo y contraseña en tus dispositivos. No insertés `service_role` ni `sb_secret_`. La nube sincroniza registros JSON por módulo y avisa si hay dos copias distintas; no sincroniza PDF importados personalmente.
+Los contenidos son introducciones, no una enciclopedia exhaustiva. Se distingue entre hechos históricos ampliamente aceptados, tradiciones confesionales, interpretaciones y cuestiones debatidas. Las fechas antiguas pueden ser aproximadas. Las descripciones no representan necesariamente a todas las comunidades de una religión. Se incluyen enlaces a recursos para profundizar y contrastar.
 
-## Publicar y actualizar
+## Copias de seguridad y privacidad
 
-**Primero**: Ajustes → Descargar respaldo JSON, y conservar por separado tus PDF personales. Para actualizar, extraé el ZIP de actualización y cargá los archivos **en la raíz** del repositorio `joshuadev2007/mi-bitacora-de-fe` preservando rutas. Comprobá la web antes de ejecutar `.github/workflows/compilar-apps.yml`. El proyecto prepara los recursos nativos para Android y Windows, pero el instalador compilado debe probarse por separado.
+Antes de actualizar, descargá un respaldo desde Ajustes y conservá por separado tus PDF personales. No subás diarios ni respaldos privados al repositorio público. Los datos locales no están cifrados; la sincronización en la nube depende de la configuración de Josh Cloud.
+
+## Publicar
+
+La rama de desarrollo de esta actualización es `kaiu/mejoras-integrales-3-5`. Revisá la versión en web y dispositivos antes de integrarla a `main`. GitHub Pages publica desde `main`; esta rama de desarrollo no modifica la web pública hasta que se integre.
